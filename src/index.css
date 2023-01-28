@@ -1,70 +1,103 @@
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
+* {
   margin: 0;
+  padding: 0;
+}
+
+.main {
+  height: 100vh;
+  margin-top: 10px;
+}
+
+/* .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #000;
+  justify-content: center;
+} */
+
+.Boxstyle {
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 550px;
+  height: 550px;
+  background-color: rgb(255, 255, 255);
+  border: 1px dotted black;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.Post-Section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 50px;
+  transform: translate(-50%, -50%);
+  border: 1px solid #000;
+  justify-content: center;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+.InnerBoxstyle {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  height: 300px;
+}
+
+.filter-grid {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  /* position: fixed; */
+  /* bottom: 0px; */
+  /* left: 400px; */
+  height: 250px;
+  background-color: rgb(255, 255, 255);
+  overflow-y: scroll;
+  border: 1px solid black;
+}
+
+.textArea {
+  padding: 8px;
+  margin: 8px;
+  border: none;
+  outline: none;
+  position: absolute;
+  top: -8px;
+  left: 392px;
+  width: 300px;
+  height: 356px;
+  padding-top: 36px;
+  padding-left: 30px;
+}
+
+.filter-item {
+  text-align: center;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
+/*   
+  const shareBtn = {
+    border: "none",
+    cursor: "pointer",
+    background: "dodgerblue",
+    color: "white",
+    padding: "3px",
+    width: "50px",
+    position: "fixed",
+    left: "651px",
+  }; */
